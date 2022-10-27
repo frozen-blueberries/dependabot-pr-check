@@ -1,0 +1,22 @@
+{
+  "name": "dependabot-pr-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frozen-blueberries/dependabot-pr-check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frozen-blueberries/dependabot-pr-check/issues"
+  },
+  "homepage": "https://github.com/frozen-blueberries/dependabot-pr-check#readme",
+  "dependencies": {
+    "lodash": "^3.0.0"
+  }
+}
