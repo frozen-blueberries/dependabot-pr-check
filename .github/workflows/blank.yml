@@ -1,0 +1,20 @@
+name: Test
+on: [pull_request]
+
+permissions:
+  contents: write
+
+jobs:
+  dependabot:
+    name: Test
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - run: |
+          echo "Hello $(date)" > file.txt
+          git add .
+          git commit -m "Test"
+          git push
